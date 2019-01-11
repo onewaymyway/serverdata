@@ -1,0 +1,1 @@
+{"label":"机器学习","childs":[{"id":0,"label":"自然语言处理","childs":[],"isOpen":false},{"id":0,"label":"图像识别","childs":[],"isOpen":false},{"id":0,"label":"3d重建","childs":[],"isOpen":false},{"id":0,"label":"分类","childs":[{"id":0,"label":"统计学习","parent":0,"childs":[],"isOpen":false},{"id":0,"label":"深度学习","parent":0,"childs":[],"isOpen":false}],"isOpen":false}]}

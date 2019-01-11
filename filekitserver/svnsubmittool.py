@@ -2,9 +2,15 @@ import subprocess
 import time
  
  
-def executeSvnCmd(cmds):
+def executeSvnCmd(cmds,showInfo=False):
+    if showInfo:
+        print(cmds)
     p = subprocess.Popen(cmds, stdin=subprocess.PIPE, stdout=subprocess.PIPE, shell=True)
-    datas=p.stdout.read().decode("utf-8")
+    dataraw=p.stdout.read()
+    #print(dataraw)
+    datas=dataraw.decode("gbk")
+    if showInfo:
+        print("rst",datas)
     return datas
 
 def getChangedFiles():
@@ -38,19 +44,19 @@ def submitFiles(files):
     cmsStr=" ".join(cmds)
     print("cmsStr",cmsStr)
     executeSvnCmd("svn cleanup")
-    datas=executeSvnCmd(cmsStr)
-    print("submit",datas)
+    datas=executeSvnCmd(cmsStr,True)
+    #print("submit",datas)
 
 def submitAddFile(file):
-    executeSvnCmd("svn add "+file)
-    executeSvnCmd("svn commit -m hihi "+file)
+    executeSvnCmd("svn add "+file,True)
+    executeSvnCmd("svn commit -m hihi "+file,True)
     
 def workLoop():
     changefiles=getChangedFiles()
     allLen=len(changefiles)
     print(allLen)
     sublen=allLen
-    maxLen=50
+    maxLen=5
     if sublen>maxLen:
         sublen=maxLen
     if sublen<1:
