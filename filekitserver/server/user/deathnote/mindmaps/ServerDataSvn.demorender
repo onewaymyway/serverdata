@@ -1,0 +1,1 @@
+{"label":"服务器数据自动备份","childs":[{"id":0,"label":"serverdata","childs":[{"id":0,"label":"svnsubmittool.py","parent":0,"childs":[{"id":0,"label":"自动同步脚本","parent":0,"childs":[],"isOpen":false}],"isOpen":false},{"id":0,"label":"server","parent":0,"childs":[],"isOpen":false}],"isOpen":false}]}
