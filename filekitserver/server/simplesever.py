@@ -132,6 +132,7 @@ class CORSRequestHandler(SimpleHTTPRequestHandler):
         try:
             self.my_doPost()
         except Exception as e:
+            print("err",e)
             pass
 
     def my_doPost(self):
