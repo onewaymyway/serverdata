@@ -287,6 +287,11 @@ def run(server_class=HTTPServer, handler_class=CORSRequestHandler, port=9953):
     print('Starting httpd on ',port,'...')
     httpd.serve_forever()
 
+def readFileGBK(path):
+    f=open(path,encoding="gbk")
+    res=f.read()
+    f.close()
+    return res
 def readFile(path):
     f=open(path,encoding="utf-8")
     res=f.read()
