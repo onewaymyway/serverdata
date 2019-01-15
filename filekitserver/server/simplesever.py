@@ -107,6 +107,8 @@ class UserClient():
         if os.path.exists(fPath):
             #print("fileExists")
             return readFile(fPath)
+        else:
+            print("filenot exist:",fPath)
         return None
 
     def renameFile(self,fPath,newPath):
