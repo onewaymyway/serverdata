@@ -163,7 +163,7 @@ class CORSRequestHandler(SimpleHTTPRequestHandler):
             return
 
         isOKPath=userData.checkPath(curPath)
-        print("isOKPath:",isOKPath)
+        print("isOKPath:",isOKPath,action)
         if not isOKPath:
             self.sendErr("path not ok")
             return
@@ -172,6 +172,7 @@ class CORSRequestHandler(SimpleHTTPRequestHandler):
         if action=="getFileList":
             self.sendSuccess(userData.getFiles(form.getvalue("path")))
         elif action=="getFile":
+            print("try get file")
             datas=userData.getFile(form.getvalue("path"))
             print("getFile datas:",datas)
             dataO={}
