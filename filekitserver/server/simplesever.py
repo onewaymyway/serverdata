@@ -175,7 +175,7 @@ class CORSRequestHandler(SimpleHTTPRequestHandler):
         elif action=="getFile":
             print("try get file")
             datas=userData.getFile(form.getvalue("path"))
-            print("getFile datas:",datas)
+            print("getFile datas:success")
             dataO={}
             if datas==None:
                 dataO["success"]=False
