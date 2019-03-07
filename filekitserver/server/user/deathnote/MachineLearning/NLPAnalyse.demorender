@@ -1,1 +1,1 @@
-{}
+{"label":"NLP分析","childs":[{"id":0,"label":"分词","childs":[],"isOpen":false},{"id":0,"label":"依存分析","childs":[],"isOpen":false},{"id":0,"label":"数据存储","childs":[],"isOpen":false},{"id":0,"label":"需求","childs":[{"id":0,"label":"查词性","parent":0,"childs":[{"id":0,"label":"返回词的词性列表","parent":0,"childs":[],"isOpen":false}],"isOpen":false},{"id":0,"label":"查依存关系","parent":0,"childs":[],"isOpen":false},{"id":0,"label":"查词是否存在","parent":0,"childs":[],"isOpen":false}],"isOpen":false}]}
