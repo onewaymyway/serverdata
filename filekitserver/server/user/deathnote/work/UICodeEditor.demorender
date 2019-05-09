@@ -1,1 +1,1 @@
-{}
+{"label":"图形化编程","childs":[{"id":0,"label":"Scratch编程效果","childs":[],"isOpen":false},{"id":0,"label":"功能","childs":[{"id":0,"label":"拖动ui组织逻辑","parent":0,"childs":[],"isOpen":false},{"id":0,"label":"可以导出代码","parent":0,"childs":[],"isOpen":false},{"id":0,"label":"可以导出配置文件","parent":0,"childs":[],"isOpen":false}],"isOpen":false}]}
