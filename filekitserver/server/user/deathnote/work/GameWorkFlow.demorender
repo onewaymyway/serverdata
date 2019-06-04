@@ -1,0 +1,1 @@
+{"label":"游戏流程","childs":[{"id":0,"label":"创建游戏流程","childs":[],"isOpen":false},{"id":0,"label":"玩游戏流程","childs":[{"id":0,"label":"启动页","parent":0,"childs":[],"isOpen":false},{"id":0,"label":"普通关卡","parent":0,"childs":[],"isOpen":false},{"id":0,"label":"游戏结束","parent":0,"childs":[],"isOpen":false}],"isOpen":false}]}
